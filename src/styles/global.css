@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,200&family=Roboto:ital,wght@0,400;1,300&family=Titillium+Web&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background:#121214;
+    font-family:'Poppins', sans-serif;
+    color:#F1EFEF
+}
