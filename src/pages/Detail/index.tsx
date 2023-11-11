@@ -41,7 +41,7 @@ export function Detail() {
                 }
                 setMovie(movie)
             })
-            setTimeout(()=>setLoading(false),200)
+            setTimeout(()=>setLoading(false),500)
 
     }, [id])
 

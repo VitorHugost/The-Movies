@@ -24,7 +24,7 @@ useEffect(() => {
                 setMovies(results)
                 }
             )
-            setLoading(false)
+            setTimeout(()=>setLoading(false),500)
     }, [])
     return (
         <>
