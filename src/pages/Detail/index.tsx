@@ -48,16 +48,16 @@ export function Detail() {
     return (
         <>
         {loading ? <Loading/>:
-            <div className="h-screen overflow-hidden">
+            <div className="h-screen md:overflow-hidden ">
                 <BackButton/>
                 <Header title={movie?.title} />
-                <section className="flex justify-center items-center gap-8 ">
+                <section className="flex flex-col justify-center items-center gap-8 md:flex-row">
                     <img className="hover:scale-105  duration-300 rounded-2xl w-[11.6rem]"
                         src={`${movie?.image}`}
                         alt={movie?.title} />
-                    <section className="w-3/6 flex flex-col gap-4">
+                    <section className="w-5/6 flex mb-4 gap-4 flex-col md:w-3/6">
                         <span >{movie?.overview}</span>
-                        <span>Lançado em {movie?.date_release}</span>
+                        <span >Lançado em {movie?.date_release}</span>
                     </section>
                 </section>
             </div>
