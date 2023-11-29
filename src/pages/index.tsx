@@ -16,7 +16,7 @@ export function Movies() {
     const [loading, setLoading] = useState(true)
 
 useEffect(() => {
-        
+    setLoading(true)
         fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${key}&language=pt-BR&page=1`)
             .then(response => response.json())
             .then(data => {
